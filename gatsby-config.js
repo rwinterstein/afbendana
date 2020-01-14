@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `Robert Winterstein`,
+    title: `Screenwriter`,
+    description: `WGA Screenwriter with over fifteen years of industry experience. Proven story analyst, script consultant, and literary manager.`,
+    author: `Alex Bendaña`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Screenwriter`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
