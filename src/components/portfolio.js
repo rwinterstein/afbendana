@@ -14,19 +14,24 @@ const Portfolio = styled.section`
   }
 
   .project-item {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
     img {
-      margin-bottom: 16px;
+      object-fit: cover;
+      height: 100%;
+      width: 60%;
+      margin-bottom: 40px;
     }
 
     .button {
       width: fit-content;
       display: flex;
       box-sizing: content-box;
-      border: 1px solid var(--grayLight);
+      border: 2px solid var(--grayLight);
       border-radius: 8px;
-      padding: 8px 16px;
+      padding: 8px 24px;
     }
   }
 
@@ -41,11 +46,17 @@ const Portfolio = styled.section`
     }
 
     .project-item {
+      display: block;
       width: 45%;
-      margin-bottom: 40px;
+      margin-bottom: 64px;
+
+      img {
+        height: unset;
+        width: unset;
+        margin-bottom: 16px;
+      }
 
       .button {
-        padding: 12px 24px;
         -webkit-transition: all 200ms ease-in-out;
         -mox-transition: all 200ms ease-in-out;
         -o-transition: all 200ms ease-in-out;
@@ -67,6 +78,16 @@ const Portfolio = styled.section`
       }
     }
   }
+
+  @media (min-width: 1024px) {
+    .project-item {
+      margin-bottom: 80px;
+
+      .button {
+        padding: 12px 32px;
+      }
+    }
+  }
 `
 
 const portfolio = () => {
@@ -78,39 +99,45 @@ const portfolio = () => {
       <div className="col-9 project-list">
         <div className="project-item">
           <img src={example} alt="example" />
-          <h4>Project Name</h4>
-          <a
-            className="button"
-            href="/404"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View
-          </a>
+          <div>
+            <h4>Project Name</h4>
+            <a
+              className="button"
+              href="/404"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View
+            </a>
+          </div>
         </div>
         <div className="project-item">
           <img src={example} alt="example" />
-          <h4>Project Name</h4>
-          <a
-            className="button"
-            href="/404"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View
-          </a>
+          <div>
+            <h4>Project Name</h4>
+            <a
+              className="button"
+              href="/404"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View
+            </a>
+          </div>
         </div>
         <div className="project-item">
           <img src={example} alt="example" />
-          <h4>Project Name</h4>
-          <a
-            className="button"
-            href="/404"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View
-          </a>
+          <div>
+            <h4>Project Name</h4>
+            <a
+              className="button"
+              href="/404"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View
+            </a>
+          </div>
         </div>
       </div>
     </Portfolio>
