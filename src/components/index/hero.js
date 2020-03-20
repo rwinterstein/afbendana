@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-import "../colors.css"
-import "../global.scss"
+import "../../colors.css"
+import "../../global.scss"
 
-import Typewriter from "../images/typewriter.jpg"
+import Typewriter from "../../images/typewriter.jpg"
 
 const Hero = styled.section`
   background-image: url(${Typewriter});

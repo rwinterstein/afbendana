@@ -1,10 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
-import "../colors.css"
-import "../global.scss"
+import "../../colors.css"
+import "../../global.scss"
 
-import example from "../images/example-project.png"
+import vicious from "../../images/vicious.png"
 
 const Portfolio = styled.section`
   display: block;
@@ -64,7 +65,7 @@ const Portfolio = styled.section`
 
         :hover {
           background-color: var(--grayLightest);
-          border-color: var(--grayDark);
+          border-color: var(--grayLightest);
           -webkit-transition: all 200ms ease-in-out;
           -mox-transition: all 200ms ease-in-out;
           -o-transition: all 200ms ease-in-out;
@@ -72,7 +73,7 @@ const Portfolio = styled.section`
         }
 
         :active {
-          background-color: var(--white);
+          background-color: var(--grayLight);
           border-color: var(--grayLight);
         }
       }
@@ -98,45 +99,29 @@ const portfolio = () => {
       </div>
       <div className="col-9 project-list">
         <div className="project-item">
-          <img src={example} alt="example" />
+          <img src={vicious} alt="The Gateway" />
           <div>
-            <h4>Project Name</h4>
-            <a
+            <h4>The Gateway</h4>
+            <Link
               className="button"
-              href="/404"
-              target="_blank"
+              to="/projects/the-gateway"
               rel="noopener noreferrer"
             >
               View
-            </a>
+            </Link>
           </div>
         </div>
         <div className="project-item">
-          <img src={example} alt="example" />
+          <img src={vicious} alt="Vicious" />
           <div>
-            <h4>Project Name</h4>
-            <a
+            <h4>Vicious</h4>
+            <Link
               className="button"
-              href="/404"
-              target="_blank"
+              to="/projects/vicious"
               rel="noopener noreferrer"
             >
               View
-            </a>
-          </div>
-        </div>
-        <div className="project-item">
-          <img src={example} alt="example" />
-          <div>
-            <h4>Project Name</h4>
-            <a
-              className="button"
-              href="/404"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View
-            </a>
+            </Link>
           </div>
         </div>
       </div>
