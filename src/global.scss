@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Baskervville|Roboto+Condensed|Roboto:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baskervville|Roboto+Condensed|Roboto:400,500,700,900&display=swap");
 
 // Column Grid - mobile
 [class*="col-"] {
@@ -151,12 +151,33 @@ h4 {
   margin-bottom: 16px;
 }
 
+h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
 p {
   font-family: "Baskerville";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 140%;
+  color: var(--grayDark);
+}
+
+.role p,
+.info p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
   color: var(--grayDark);
 }
 
