@@ -22,34 +22,15 @@ const Header = styled.section`
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: normal;
     text-decoration: none;
     color: var(--grayLight);
-    background: rgba(207, 210, 213, 0.2);
+    background: transparent;
     border-radius: 8px;
-    padding: 12px 16px;
-    -webkit-transition: all 200ms ease-in-out;
-    -mox-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
 
     .icon {
       margin-right: 12px;
-    }
-
-    :hover {
-      background-color: var(--grayLightest);
-      border-color: var(--grayDark);
-      -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
-    }
-
-    :active {
-      background-color: var(--grayGreen);
-      border-color: var(--grayLight);
     }
   }
 
@@ -63,6 +44,35 @@ const Header = styled.section`
   h2 {
     padding-bottom: 48px;
   }
+
+  @media (min-width: 768px) {
+    .back-btn {
+      position: absolute;
+      top: 40px;
+      font-size: 18px;
+      padding: 12px 12px;
+      -webkit-transition: all 200ms ease-in-out;
+      -mox-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+
+      .icon {
+        margin-right: 12px;
+      }
+
+      :hover {
+        background-color: var(--grayLightest);
+        -webkit-transition: all 200ms ease-in-out;
+        -mox-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+      }
+
+      :active {
+        background: transparent;
+      }
+    }
+  }
 `
 
 const header = props => {
@@ -72,8 +82,8 @@ const header = props => {
         <FontAwesomeIcon className="icon" icon={faArrowLeft} />
         Back
       </Link>
-      <img className="col-3" src={props.CoverArt} alt="Cover art" />
-      <h2 className="col-9">{props.Title}</h2>
+      <img className="col-3" src={props.coverArt} alt="Cover art" />
+      <h2 className="col-9">{props.title}</h2>
     </Header>
   )
 }
