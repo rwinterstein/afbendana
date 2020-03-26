@@ -30,9 +30,9 @@ const Portfolio = styled.section`
       width: fit-content;
       display: flex;
       box-sizing: content-box;
-      border: 2px solid var(--grayLight);
+      border: 1px solid var(--grayDark);
       border-radius: 8px;
-      padding: 8px 24px;
+      padding: 12px 24px;
     }
   }
 
@@ -73,8 +73,8 @@ const Portfolio = styled.section`
         }
 
         :active {
-          background-color: var(--grayLight);
-          border-color: var(--grayLight);
+          background-color: transparent;
+          border-color: var(--grayLightest);
         }
       }
     }
@@ -83,10 +83,6 @@ const Portfolio = styled.section`
   @media (min-width: 1024px) {
     .project-item {
       margin-bottom: 80px;
-
-      .button {
-        padding: 12px 32px;
-      }
     }
   }
 `
