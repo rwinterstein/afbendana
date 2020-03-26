@@ -10,7 +10,7 @@ import { fas, faFileDownload } from "@fortawesome/free-solid-svg-icons"
 
 library.add(fas, faFileDownload)
 
-const kebabCase = require('lodash/kebabcase');
+const kebabCase = require('lodash.kebabcase');
 
 const Content = styled.section`
   display: flex;
