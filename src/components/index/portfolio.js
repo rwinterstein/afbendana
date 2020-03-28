@@ -5,7 +5,13 @@ import styled from "styled-components"
 import "../../colors.css"
 import "../../global.scss"
 
+import theGateway from "../../images/the-gateway.png"
 import vicious from "../../images/vicious.png"
+import reEntry from "../../images/re-entry.png"
+import blackAlligator from "../../images/black-alligator.png"
+import angeles from "../../images/angeles.jpg"
+import accelerant from "../../images/accelerant.jpg"
+import theKnick from "../../images/the-knick.jpg"
 
 const Portfolio = styled.section`
   display: block;
@@ -23,6 +29,8 @@ const Portfolio = styled.section`
       object-fit: cover;
       height: 100%;
       width: 60%;
+      box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
       margin-bottom: 40px;
     }
 
@@ -53,7 +61,7 @@ const Portfolio = styled.section`
 
       img {
         height: unset;
-        width: unset;
+        width: 100%;
         margin-bottom: 16px;
       }
 
@@ -95,7 +103,7 @@ const portfolio = () => {
       </div>
       <div className="col-9 project-list">
         <div className="project-item">
-          <img src={vicious} alt="The Gateway" />
+          <img src={theGateway} alt="The Gateway" />
           <div>
             <h4>The Gateway</h4>
             <Link
@@ -121,7 +129,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={vicious} alt="Re-Entry" />
+          <img src={reEntry} alt="Re-Entry" />
           <div>
             <h4>Re-Entry</h4>
             <Link
@@ -134,7 +142,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={vicious} alt="BLACK ALLIGATOR" />
+          <img src={blackAlligator} alt="BLACK ALLIGATOR" />
           <div>
             <h4>BLACK ALLIGATOR</h4>
             <Link
@@ -147,7 +155,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={vicious} alt="Angeles" />
+          <img src={angeles} alt="Angeles" />
           <div>
             <h4>Angeles</h4>
             <Link
@@ -160,7 +168,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={vicious} alt="Accelerant" />
+          <img src={accelerant} alt="Accelerant" />
           <div>
             <h4>Accelerant</h4>
             <Link
@@ -173,7 +181,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={vicious} alt="The Knick" />
+          <img src={theKnick} alt="The Knick" />
           <div>
             <h4>The Knick</h4>
             <Link
