@@ -1,10 +1,9 @@
 import React from "react"
 import Layout from "../../components/layout"
 import ProjectLayout from "../../components/projects/projectLayout"
-import Footer from "../../components/footer"
 
-import projectImg from "../../images/vicious.png"
-import projectPDF from "../../docs/the-gateway.pdf"
+import projectImg from "../../images/accelerant.jpg"
+import fileSource from "../../docs/accelerant.pdf"
 
 const Accelerant = () => (
   <Layout>
@@ -13,11 +12,11 @@ const Accelerant = () => (
       title="Accelerant"
       role="Executive Producer"
       info="Feature Film, Thriller"
-      fileDownload={projectPDF}
+      fileName="PDF"
+      fileSource={fileSource}
       description="Attached to produce alongside Nostromo Pictures (RED LIGHTS, BURIED) and Flux Capacitor Studios (GIVE ME LIBERTY)."
       logline="A workaholic mother with a troubled past finds herself trapped in her vehicle when a mysterious hacker with unknown motives takes control of the wheel and her life."
     />
-    <Footer />
   </Layout>
 )
 
