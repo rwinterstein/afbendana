@@ -20,6 +20,7 @@ const Footer = styled.footer`
 
   .contact-options {
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     width: 200px;
     font-size: 1.5em;
@@ -74,7 +75,7 @@ const footer = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
         <a
-          href="apple.com" // TODO: Change me
+          href="https://www.linkedin.com/in/alex-bendaña-42a457179/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

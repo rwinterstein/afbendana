@@ -24,6 +24,7 @@ const Portfolio = styled.section`
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-bottom: 40px;
 
     img {
       object-fit: cover;
@@ -31,7 +32,11 @@ const Portfolio = styled.section`
       width: 60%;
       box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.25);
       border-radius: 4px;
-      margin-bottom: 40px;
+      margin-bottom: 0;
+    }
+
+    div {
+      align-self: center;
     }
 
     .button {
@@ -58,6 +63,7 @@ const Portfolio = styled.section`
       display: block;
       width: 45%;
       margin-bottom: 64px;
+      padding-bottom: 0;
 
       img {
         height: unset;
