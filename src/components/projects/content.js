@@ -10,15 +10,15 @@ import { fas, faFileDownload } from "@fortawesome/free-solid-svg-icons"
 
 library.add(fas, faFileDownload)
 
-const kebabCase = require('lodash.kebabcase');
+const kebabCase = require("lodash.kebabcase")
 
 const Content = styled.section`
-  display: flex;
-  margin-top: 80px;
+  display: block;
+  flex: 1 0 auto;
   padding-top: 64px;
 
   .left-column {
-    margin-right: 40px;
+    margin-bottom: 48px;
 
     .details {
       margin-bottom: 48px;
@@ -26,6 +26,36 @@ const Content = styled.section`
 
     p {
       margin-bottom: 24px;
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .download-btn {
+      display: flex;
+      width: 45%;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: normal;
+      text-align: center;
+      text-decoration: none;
+      color: var(--grayDark);
+      background: transparent;
+      border: 1px solid var(--grayDark);
+      border-radius: 8px;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+    }
+
+    .icon {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 12px;
     }
   }
 
@@ -51,49 +81,98 @@ const Content = styled.section`
     }
   }
 
-  .download-btn {
-    display: flex;
-    width: fit-content;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: normal;
-    text-decoration: none;
-    color: var(--grayDark);
-    background: transparent;
-    border: 1px solid var(--grayDark);
-    border-radius: 8px;
-    padding: 12px 24px;
-    -webkit-transition: all 200ms ease-in-out;
-    -mox-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-  }
+  @media (min-width: 425px) {
+    .left-column {
+      display: flex;
+      justify-content: space-between;
 
-  .icon {
-    margin-right: 12px;
+      .details {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      .btn-wrapper {
+        display: block;
+        width: 40%;
+      }
+
+      .download-btn {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
   @media (min-width: 768px) {
-    .download-btn {
-      -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
+    display: flex;
+    margin-top: 80px;
 
-      :hover {
-        background-color: var(--grayLightest);
-        border-color: var(--grayLightest);
+    .left-column {
+      display: block;
+      margin-right: 40px;
+
+      .details {
+        margin-bottom: 48px;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      .btn-wrapper {
+        width: 100%;
+      }
+
+      .download-btn {
+        font-size: 14px;
         -webkit-transition: all 200ms ease-in-out;
         -mox-transition: all 200ms ease-in-out;
         -o-transition: all 200ms ease-in-out;
         transition: all 200ms ease-in-out;
+
+        :hover {
+          background-color: var(--grayLightest);
+          border-color: var(--grayLightest);
+          -webkit-transition: all 200ms ease-in-out;
+          -mox-transition: all 200ms ease-in-out;
+          -o-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+        }
+
+        :active {
+          background-color: transparent;
+          border-color: var(--grayLightest);
+        }
+      }
+    }
+
+    .right-column {
+      .description {
+        margin-bottom: 64px;
       }
 
-      :active {
-        background-color: transparent;
-        border-color: var(--grayLightest);
+      .logline p {
+        font-size: 16px;
+        padding: 16px;
+      }
+
+      h6 {
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .left-column {
+      .download-btn {
+        font-size: 16px;
       }
     }
   }
@@ -113,11 +192,27 @@ const content = props => {
             <p>{props.info}</p>
           </div>
         </div>
-        <div>
-          <a className="download-btn" href={props.fileDownload} download={kebabCase(props.title)}>
-            <FontAwesomeIcon className="icon" icon={faFileDownload} />
-            Download PDF
-          </a>
+        <div className="btn-wrapper">
+          {props.fileSource ? (
+            <a
+              className="download-btn"
+              href={props.fileSource}
+              download={kebabCase(props.title)}
+            >
+              <FontAwesomeIcon className="icon" icon={faFileDownload} />
+              Download {props.fileName}
+            </a>
+          ) : null}
+          {props.fileSourceTwo ? (
+            <a
+              className="download-btn"
+              href={props.fileSourceTwo}
+              download={kebabCase(props.title + props.fileNameTwo)}
+            >
+              <FontAwesomeIcon className="icon" icon={faFileDownload} />
+              Download {props.fileNameTwo}
+            </a>
+          ) : null}
         </div>
       </div>
       <div className="right-column col-8">

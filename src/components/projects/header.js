@@ -35,14 +35,17 @@ const Header = styled.section`
   }
 
   img {
+    max-width: 33.33%;
     box-shadow: 2px 8px 40px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    margin-right: 40px;
-    margin-bottom: -80px;
+    margin-top: 40px;
+    margin-right: 24px;
+    margin-bottom: 24px;
   }
 
   h2 {
-    padding-bottom: 48px;
+    font-size: 28px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: 768px) {
@@ -71,6 +74,24 @@ const Header = styled.section`
       :active {
         background: transparent;
       }
+    }
+
+    img {
+      max-width: unset;
+      margin-top: 0;
+      margin-right: 40px;
+      margin-bottom: -80px;
+    }
+
+    h2 {
+      font-size: 36px;
+      padding-bottom: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 48px;
     }
   }
 `
