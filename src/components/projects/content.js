@@ -109,7 +109,6 @@ const Content = styled.section`
   @media (min-width: 768px) {
     display: flex;
     margin-top: 80px;
-    padding-top: 64px;
 
     .left-column {
       display: block;

@@ -44,6 +44,7 @@ const Header = styled.section`
   }
 
   h2 {
+    font-size: 28px;
     padding-bottom: 24px;
   }
 
@@ -83,7 +84,14 @@ const Header = styled.section`
     }
 
     h2 {
+      font-size: 36px;
       padding-bottom: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 48px;
     }
   }
 `
