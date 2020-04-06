@@ -4,13 +4,6 @@ import styled from "styled-components"
 import "../colors.css"
 import "../global.scss"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
-
-library.add(fab, faEnvelope)
-
 const Footer = styled.footer`
   display: flex;
   flex-direction: column-reverse;
@@ -20,9 +13,8 @@ const Footer = styled.footer`
 
   .contact-options {
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
-    width: 200px;
+    width: 180px;
     font-size: 1.5em;
     margin-left: auto;
     margin-right: auto;
@@ -71,8 +63,8 @@ const footer = () => {
         © Alex Bendaña - {new Date().getFullYear()}
       </div>
       <div className="contact-options">
-        <a href="mailto:XXX?subject=Hello!">
-          <FontAwesomeIcon icon={faEnvelope} />
+        <a href="mailto:afb@nailfactory.co?subject=Hello!">
+          Email
         </a>
         <a
           href="https://www.linkedin.com/in/alex-bendaña-42a457179/"
@@ -80,15 +72,7 @@ const footer = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-        </a>
-        <a
-          href="apple.com" // TODO: Change me
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <FontAwesomeIcon icon={["fab", "instagram"]} />
+          LinkedIn
         </a>
       </div>
     </Footer>

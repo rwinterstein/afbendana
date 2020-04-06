@@ -11,7 +11,7 @@ const TheGateway = () => (
       coverArt={projectImg}
       title="Vicious"
       role="Writer"
-      info="Feature Film, Drama"
+      info="Feature Film, Sci-Fi"
       fileName="PDF"
       fileSource={fileSource}
       description="Hired by Scott Free to adapt bestselling novel into feature film screenplay. Wrote three drafts over two years."

@@ -191,14 +191,15 @@ p {
   color: var(--grayDark);
 }
 
-.copyright {
+.copyright,
+.contact-options a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
+  text-decoration: none;
   color: var(--gray);
-  height: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -221,7 +222,8 @@ p {
     font-size: 18px;
   }
 
-  .copyright {
+  .copyright,
+  .contact-options a {
     text-align: left;
   }
 }
@@ -261,7 +263,8 @@ p {
     font-size: 24px;
   }
 
-  .copyright {
+  .copyright,
+  .contact-options a {
     font-size: 16px;
   }
 }
