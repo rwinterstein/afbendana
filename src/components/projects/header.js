@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import "../../colors.css"
-import "../../global.scss"
+import "../../styles/colors.css"
+import "../../styles/global.scss"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

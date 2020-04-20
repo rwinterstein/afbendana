@@ -7,7 +7,7 @@ import Consulting from "../components/index/consulting"
 import Portfolio from "../components/index/portfolio"
 import Footer from "../components/footer"
 
-import "../global.scss"
+import "../styles/global.scss"
 
 const IndexPage = () => (
   <Layout>
