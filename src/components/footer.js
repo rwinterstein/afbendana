@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import "../colors.css"
-import "../global.scss"
+import "../styles/colors.css"
+import "../styles/global.scss"
 
 const Footer = styled.footer`
   display: flex;
