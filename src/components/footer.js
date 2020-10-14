@@ -63,7 +63,7 @@ const footer = () => {
         © Alex Bendaña - {new Date().getFullYear()}
       </div>
       <div className="contact-options">
-        <a href="mailto:afb@nailfactory.co?subject=Hello!">
+        <a href="mailto:analog@afbendana.com?subject=Hello!">
           Email
         </a>
         <a
