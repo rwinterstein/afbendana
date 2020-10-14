@@ -67,7 +67,7 @@ const footer = () => {
           Email
         </a>
         <a
-          href="https://www.linkedin.com/in/alex-bendaña-42a457179/"
+          href="https://www.linkedin.com/in/alex-felix-bendaña-42a457179/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
