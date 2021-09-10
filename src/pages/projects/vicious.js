@@ -14,7 +14,7 @@ const TheGateway = () => (
       info="Feature Film, Sci-Fi"
       fileName="PDF"
       fileSource={fileSource}
-      description="Hired by Scott Free to adapt bestselling novel into feature film screenplay. Wrote three drafts over two years."
+      description="Hired by Scott Free to adapt bestselling novel into feature film screenplay."
       logline="After two pre-med students discover that Near Death Experiences can trigger supernatural abilities, one must stop the other after he goes on a homicidal rampage."
     />
   </Layout>
