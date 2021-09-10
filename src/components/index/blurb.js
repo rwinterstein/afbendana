@@ -17,7 +17,10 @@ const blurb = () => {
           experience. I'm also a seasoned story analyst and script consultant. I
           write character-driven thrillers, sci-fi, and historical dramas that
           deal with social, medical, and environmental issues. I dig
-          high-concept stories with hard edges and dark atmospheres.
+          high-concept stories with hard edges and dark atmospheres. My most
+          recent film, THE GATEWAY, is available on Amazon and stars Olivia
+          Munn, Frank Grillo, Shea Whigham, Bruce Dern, Taryn Manning, Keith
+          David, and Mark Boone Junior.
         </h2>
       </div>
     </Blurb>

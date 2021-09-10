@@ -28,10 +28,7 @@ const consulting = () => {
           I've optioned over half a dozen original projects in film and
           television and I've been hired to rewrite screenplays ranging from $3M
           contained thrillers to $70M sci-fi blockbusters. I've also worked as a
-          professional script analyst for studios like Alcon and Endemol Shine
-          and the film I wrote, THE GATEWAY, is available on Amazon and stars
-          Olivia Munn, Frank Grillo, Shea Whigham, Bruce Dern, Taryn Manning,
-          Keith David, and Mark Boone Junior.
+          professional script analyst for studios like Alcon and Endemol Shine.
         </p>
       </div>
     </Consulting>
