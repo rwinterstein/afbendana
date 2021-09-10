@@ -29,8 +29,8 @@ const consulting = () => {
           television and I've been hired to rewrite screenplays ranging from $3M
           contained thrillers to $70M sci-fi blockbusters. I've also worked as a
           professional script analyst for studios like Alcon and Endemol Shine
-          and my Black List script THE GATEWAY is in post-production and stars
-          Olivia Munn, Frank Grillo, Bruce Dern, Taryn Manning, Shea Whigham,
+          and the film I wrote, THE GATEWAY, is available on Amazon and stars
+          Olivia Munn, Frank Grillo, Shea Whigham, Bruce Dern, Taryn Manning,
           Keith David, and Mark Boone Junior.
         </p>
       </div>
